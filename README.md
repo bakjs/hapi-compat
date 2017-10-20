@@ -36,6 +36,7 @@ ID                | Auto Fix    | Perf Impact  | Description
 ------------------|-------------|--------------|--------------------------------------------------------------------
 ASYNC_PLUGINS     | YES         | I            | plugins with next callback should return a Promise now
 SERVER_REGISTER   | YES         | -            | `server.register({ register })` should be `{ plugin }`
+PLUGIN_ATTRS      | YES         | -            | `register.attributes` ~> `{register, pkg}`
 SERVER_ON         | YES         | I* + R*      | `server.on` ~> `server.events.on`
 ASYNC_SERVER_EXT  | YES         | I            | Support for server.ext where the method expects having `next` callback
 
