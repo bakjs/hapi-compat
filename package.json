@@ -1,5 +1,6 @@
 {
   "name": "hapi-compat",
+  "description": "Tries to detect, warn and auto-fix Hapi 17 breaking changes",
   "version": "2.0.0",
   "license": "MIT",
   "main": "lib/index.js",
