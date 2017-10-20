@@ -1,5 +1,6 @@
 # hapi-compat
 
+<p>
 <a href="https://github.com/bakjs/bak">
     <img alt="" src="https://david-dm.org/bakjs/hapi-compat.svg?style=flat-square">
 </a>
@@ -9,6 +10,7 @@
 <a href="https://www.npmjs.com/package/hapi-compat">
     <img alt="" src="https://img.shields.io/npm/v/hapi-compat.svg?style=flat-square">
 </a>
+<br>
 <a href="https://github.com/bakjs/hapi-compat">
     <img alt="" src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square">
 </a>
@@ -22,6 +24,7 @@
     <img alt="" src="https://img.shields.io/badge/hapi.js-17.x-yellow.svg?style=flat-square">
 </a>
 <br>
+</p>
 
 This plugin tries to detect, warn and auto-fix Hapi 17 breaking changes which are not fixed in plugins with a best effort.
 
@@ -36,7 +39,7 @@ SERVER_REGISTER   | YES         | -            | `server.register({ register })`
 SERVER_ON         | YES         | I* + R*      | `server.on` ~> `server.events.on`
 ASYNC_SERVER_EXT  | YES         | I            | Support for server.ext where the method expects having `next` callback
 
-- Perf Impact indicates wether this support impacts performance of framework (I)init or (R)untime.
+- Perf Impact indicates if this support impacts performance of framework (I)init or (R)untime.
 - `*` means only impacts perf when old code detected not newer plugins
 
 For more details please look at breaking changes list [here](https://github.com/hapijs/hapi/milestone/221?closed=1)
@@ -71,6 +74,7 @@ server.register({
 ## Questions
 
 + Does this plugin magically fixes everything for migration?
+
   Absolutely no. This is just a helper utility for making migration easier and faster.
 
 # License 
