@@ -1,10 +1,10 @@
 {
   "name": "hapi-compat",
-  "description": "Tries to detect, warn and auto-fix Hapi 17 breaking changes",
-  "version": "2.0.0",
+  "description": "hapi plugin which tries to detect, warn and auto-fix Hapi 17 breaking changes",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
-  "homepage": "https://github.com/bakjs/plugins/tree/master/plugins/compat",
+  "homepage": "https://github.com/bakjs/hapi-compat",
   "scripts": {
     "lint": "eslint lib",
     "test": "npm run lint",

@@ -1,5 +1,28 @@
 # hapi-compat
 
+<a href="https://github.com/bakjs/bak">
+    <img alt="" src="https://david-dm.org/bakjs/hapi-compat.svg?style=flat-square">
+</a>
+<a href="https://www.npmjs.com/package/hapi-compat">
+    <img alt="" src="https://img.shields.io/npm/dt/hapi-compat.svg?style=flat-square">
+</a>
+<a href="https://www.npmjs.com/package/hapi-compat">
+    <img alt="" src="https://img.shields.io/npm/v/hapi-compat.svg?style=flat-square">
+</a>
+<a href="https://github.com/bakjs/hapi-compat">
+    <img alt="" src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square">
+</a>
+<a href="https://circleci.com/gh/bakjs/hapi-compat">
+    <img alt="" src="https://img.shields.io/circleci/project/github/bakjs/hapi-compat.svg?style=flat-square">
+</a>
+<a href="https://codecov.io/gh/bakjs/hapi-compat">
+    <img alt="" src="https://img.shields.io/codecov/c/github/bakjs/hapi-compat.svg?style=flat-square">
+</a>
+<a href="https://hapijs.com/">
+    <img alt="" src="https://img.shields.io/badge/hapi.js-17.x-yellow.svg?style=flat-square">
+</a>
+
+
 This plugin tries to detect, warn and auto-fix Hapi 17 breaking changes which are not fixed in plugins with a best effort.
 Hooks are recursive so if a plugin requires incompatible plugins, hapi-compat plugin will support them too.
 
