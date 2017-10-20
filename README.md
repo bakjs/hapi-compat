@@ -3,19 +3,19 @@
 This plugin tries to detect, warn and auto-fix Hapi 17 breaking changes which are not fixed in plugins with a best effort.
 Hooks are recursive so if a plugin requires incompatible plugins, hapi-compat plugin will support them too.
 
-## Supported Breaking Changes
+## What's supported?
 
-ID                | Auto Fix    | Perf impact* | Description
+ID                | Auto Fix    | Perf Impact  | Description
 ------------------|-------------|--------------|--------------------------------------------------------------------
-ASYNC_PLUGINS     | YES         | I            | plugins with next callback should return a Promise now
+ASYNC_PLUGINS     | YES         | B            | plugins with next callback should return a Promise now
 SERVER_REGISTER   | YES         | -            | `server.register({ register })` should be `{ plugin }`
-SERVER_ON         | YES         | I* + R*      | `server.on` ~> `server.events.on`
-ASYNC_SERVER_EXT  | YES         | I            | Support for server.ext where the method expects having `next` callback
+SERVER_ON         | YES         | B* + R*      | `server.on` ~> `server.events.on`
+ASYNC_SERVER_EXT  | YES         | B            | Support for server.ext where the method expects having `next` callback
 
-* Perf impact indicated wether this support impacts on (R)untime or (I)nitialize phases.
-`*` means only when old code detected and not affecting newer plugins.
+- Perf Impact indicates wether this support impacts performance of framework (B)oot or (R)untime.
+- `*` means only impacts perf when old code detected not newer plugins
 
-For a detailed look at breaking changes please see [here](https://github.com/hapijs/hapi/milestone/221?closed=1).
+For more details please look at breaking changes list [here](https://github.com/hapijs/hapi/milestone/221?closed=1)
 
 ## Setup
 
@@ -46,7 +46,7 @@ server.register({
 })
 ```
 
-# Questions
+## Questions
 
 + Does this plugin magically fixes everything for migration?
 
