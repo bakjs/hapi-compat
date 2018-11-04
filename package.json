@@ -27,7 +27,7 @@
     "joi": "^13.0.1"
   },
   "devDependencies": {
-    "eslint": "^4.8.0",
+    "eslint": "^5.8.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-html": "^3.2.2",
     "eslint-plugin-import": "^2.7.0",
