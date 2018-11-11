@@ -869,9 +869,13 @@ has@^1.0.1:
   dependencies:
     function-bind "^1.0.2"
 
-hoek@5.x.x, hoek@^5.0.0:
+hoek@5.x.x:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-5.0.0.tgz#b88953e0fec8e58082e4abd223ed20915d535831"
+
+hoek@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/hoek/-/hoek-6.0.3.tgz#7884360426d927865a0a1251fc9c59313af5b798"
 
 hosted-git-info@^2.1.4:
   version "2.5.0"
